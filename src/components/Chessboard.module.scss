@@ -1,0 +1,201 @@
+.overlay{
+  position: relative;
+  overflow: visible;
+}
+
+.main{
+  position: relative;
+  display: grid;
+  width: fit-content;
+  height: fit-content;
+
+  grid-gap: 0;
+
+  grid-template-columns: repeat(8, 100px);
+  grid-template-rows: repeat(8, 100px);
+  grid-auto-flow: row;
+
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.userNameTime{
+  position: absolute;
+  color: #c2c2c2;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  left: 0px;
+}
+
+.player1Time{
+  display: flex;
+  position: absolute;
+  color: #f6f6f6;
+
+  background: #22201d;
+  width: 140px;
+  height: 45px;
+
+  font-size: 22px;
+  font-weight: 400;
+
+  justify-content: flex-end;
+
+  right: 0px;
+  bottom: -54px;
+
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.player2Time{
+  display: flex;
+  position: absolute;
+  color: #f6f6f6;
+
+  background: #22201d;
+  width: 140px;
+  height: 45px;
+
+  font-size: 22px;
+  font-weight: 400;
+
+  justify-content: flex-end;
+
+  right: 0px;
+  top: -54px;
+
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.placeholder{
+  width: 800px;
+  height: 800px;
+
+  background: #272522;
+}
+
+.popup{
+  position: fixed;
+
+  background: rgba(0, 0, 0, 0.664);
+  min-height: 100%;
+  width: 100%;
+
+  left: 0px;
+  top: 0px;
+
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup > .middle{
+  background: #22201d;
+
+  width: fit-content;
+  margin-left: 29.2%;
+  margin-top: 35vh;
+
+  padding: 30px;
+  border-radius: 5px;
+
+  font-weight: bold;
+}
+
+.popup > .middle > input{
+  background: #33322f;
+  height: 50px;
+
+  color: white;
+  padding-left: 20px;
+  
+  border: none;
+  border-radius: 3px;
+}
+
+.popup .middle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #bbb8ad;
+}
+
+.popup .middle button{
+  height: 40px;
+  width: 100%;
+  margin-top: 15px;
+
+  color: #bbb8ad;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.green{
+  background: #3d5741;
+  transition: background 0.5s;
+
+  &:hover {
+    background: #4d6d52;
+  }
+
+  &:active {
+    background: #7fb186;
+  }
+}
+
+.red{
+  background: #33322f;
+  transition: background 0.5s;
+
+  &:hover {
+    background: #413f3c;
+  }
+
+  &:active {
+    background: #948e87;
+  }
+}
+
+.popup span{
+  background:rgba(0, 0, 0, 0.445);
+  padding: 15px;
+
+  margin-top: 15px;
+
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.copy{
+  background: #33322f;
+  transition: background 0.25s;
+
+  &:hover {
+    background: #413f3c;
+  }
+
+  &:active {
+    background: #948e87;
+  }
+}
+
+.okCancel{
+  display: flex;
+  width: 250px;
+
+  margin-top: 10px;
+
+  justify-content: space-around;
+}
+
+.okCancel > button{
+  padding: 0px 15px 0px 15px;
+}

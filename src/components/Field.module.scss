@@ -1,0 +1,63 @@
+.main {
+ position: relative;
+ display: flex;
+
+ align-items: center;
+ justify-content: center;
+
+}
+
+.main img{
+  z-index: 2;
+}
+
+.number, .letter{
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.number{
+  left: 5px;
+  top: 3px;
+
+  background: transparent !important;
+}
+
+.letter{
+  bottom: 3px;
+  right: 10px;
+
+  background: transparent !important;
+}
+
+.black{
+  background: #769656;
+  color: #eeeed2;
+}
+
+.white{
+  background: #eeeed2;
+  color: #769656;
+}
+
+.showLegalMove{
+  position: absolute;
+
+  height: 100px;
+  width: 100px;
+
+  border-radius: 50%;
+
+  border: 5px solid rgba(0, 0, 0, 0.13);
+}
+
+.showLegalMove2{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.13);
+
+  height: 30px;
+  width: 30px;
+
+  border-radius: 50%;
+}
