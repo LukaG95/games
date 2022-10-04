@@ -1,0 +1,14 @@
+.main{
+  display: flex;
+  height: 100%;
+  
+  align-items: center;
+}
+
+.boardSidebarWrapper{
+  display: flex;  
+  width: 100%;
+
+  max-height: 800px;
+  justify-content: center;
+}

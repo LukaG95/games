@@ -2,36 +2,16 @@ import styles from "./App.module.scss";
 import { useState } from "react";
 import { Route, Routes } from 'react-router-dom';
 
-import Chessboard from "./components/Chessboard";
-import OptionSidebar from "./components/OptionSidebar";
-import HistorySidebar from "./components/HistorySidebar";
-import "./styles.css";
+import Chess from './Chess/Chess'
 
-function App() {
-  const [history, setHistory] = useState([]);
-
-  return ( 
-    <div className={styles.main}>
-      <div className={styles.boardSidebarWrapper}>
-        <Routes>
-          <Route exact path="/" element={
-              <>
-                <Chessboard boardColor="default" /> 
-                <OptionSidebar />
-              </>
-            }
-          />
-          <Route path="/live/:matchID" element={
-            <>
-              <Chessboard boardColor="default" liveGame={true} setHistory={setHistory}/> 
-              <HistorySidebar history={history} />
-            </>
-          }
-          />
-        </Routes>
-      </div>
-    </div>
-  );
+const App = () => {
+  return (
+    <Routes>
+      <Route exact path="/" element={<div>landing page</div>}/>
+      <Route path="/chess" element={<Chess />} />
+      <Route path="*" element={<div>404 Oops this page doesn't exist</div>} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App                                        
