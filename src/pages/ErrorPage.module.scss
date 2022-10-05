@@ -1,0 +1,22 @@
+.errorPage{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  p{
+    color: #707070;
+    font-size: 24px;
+    font-weight: 700;
+  }
+ 
+  a{
+    margin-top: 20px;
+    color: #b4b4b4;
+
+    text-decoration: underline;
+  }
+}
+

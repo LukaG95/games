@@ -1,18 +1,18 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 
   font-family: "Poppins", sans-serif;
   -webkit-tap-highlight-color: transparent; /*To remove the blue background when tapping on links & icons on phone*/
-
 }
+
 html, body, #root{
   height: 100%;
 }
 
 body{
-  background-color: #312e2b;
+  background-color: #181818;
 }
 
 .noUserInteraction {
@@ -22,4 +22,8 @@ body{
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+a{
+  text-decoration: none;
 }

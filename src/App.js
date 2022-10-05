@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Chess from './chess/Chess';
 import Landing from './pages/Landing';
+import ErrorPage from './pages/ErrorPage';
 
 const App = () => {
   return (
@@ -11,10 +12,11 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Landing />}/> 
         <Route path="/chess/*" element={<Chess />} />
-        <Route path="*" element={<div>404 Oops this page doesn't exist</div>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </main>
+    </main> 
   )
 }
 
 export default App                                        
+

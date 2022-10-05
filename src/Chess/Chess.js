@@ -5,7 +5,6 @@ import { Route, Routes } from 'react-router-dom';
 import Chessboard from "./components/Chessboard";
 import OptionSidebar from "./components/OptionSidebar";
 import HistorySidebar from "./components/HistorySidebar";
-import "../styles.css";
 
 function Chess() {
   const [history, setHistory] = useState([]);
