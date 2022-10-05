@@ -13,7 +13,7 @@ function Field({background, boardColor, square, pieceColor, piece, onClickFuncti
       <div className={styles.number} style={boardColors[boardColor][background]}>{j === 0 && square[1]}</div>
     
       {/*show piece*/}
-      {piece && <img className="noUserInteraction" width="100" height="100" src={`http://localhost:5000/images/pieces/${pieceColor} ${piece}.png`} alt="" />}
+      {piece && <img className="noUserInteraction" width="100" height="100" src={`http://localhost:5000/images/chess/pieces/${pieceColor} ${piece}.png`} alt="" />}
    
       {/*show legal moves*/}
       {legalMove && <div className={piece ? styles.showLegalMove : styles.showLegalMove2}></div>}

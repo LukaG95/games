@@ -1,0 +1,44 @@
+.main{
+  display: flex;
+ 
+  justify-content: space-evenly;
+  padding: 50px 150px 0px 150px;
+}
+
+.gameButton{
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.1);
+  width: 380px;
+  height: 220px;
+
+  border-radius: 15px;
+
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: background 300ms;
+
+  p{
+    color: #f6f6f6;
+    font-weight: 600;
+    font-size: 20px;
+
+    margin-bottom: 25px;
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+  }
+
+  &:hover{
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  &:active{
+    background: rgba(255, 255, 255, 0.20);
+  }
+}

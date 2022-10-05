@@ -12,22 +12,21 @@ function Chess() {
 
   return ( 
     <div className={styles.main}>
-      <div className={styles.boardSidebarWrapper}>
-        <Routes>
-          <Route exact path="/" element={
-              <>
+      <div className={styles.wrapper}>
+       <Routes>
+          <Route path="/" element={
+              <> 
                 <Chessboard boardColor="default" /> 
                 <OptionSidebar />
               </>
-            }
-          />
+            }/>
           <Route path="/live/:matchID" element={
             <>
               <Chessboard boardColor="default" liveGame={true} setHistory={setHistory}/> 
               <HistorySidebar history={history} />
             </>
-          }
-          />
+          }/> 
+          <Route path="*" element={<div>404 Oops this page doesn't exist</div>} />
         </Routes>
       </div>
     </div>

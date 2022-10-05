@@ -60,13 +60,13 @@ function OptionSidebar() {
           
           <div className={styles.chooseColorWrapper}>
             <div onClick={()=> setSelectedColor("black")} className={selectedColor === "black" ? styles.highlighted : undefined}>
-              <img className="noUserInteraction" width="50" height="50" src={"/images/chooseColor/black king.png"} alt=""></img>
+              <img className="noUserInteraction" width="50" height="50" src={"/images/chess/chooseColor/black king.png"} alt=""></img>
             </div>
             <div onClick={()=> setSelectedColor("random")} className={selectedColor === "random" ? styles.highlighted : undefined}>
-              <img className="noUserInteraction" width="50" height="50" src={"/images/chooseColor/random king.png"} alt=""></img>
+              <img className="noUserInteraction" width="50" height="50" src={"/images/chess/chooseColor/random king.png"} alt=""></img>
             </div>
             <div onClick={()=> setSelectedColor("white")} className={selectedColor === "white" ? styles.highlighted : undefined}>
-              <img className="noUserInteraction" width="50" height="50" src={"/images/chooseColor/white king.png"} alt=""></img>
+              <img className="noUserInteraction" width="50" height="50" src={"/images/chess/chooseColor/white king.png"} alt=""></img>
             </div>
           </div>
 
@@ -133,7 +133,7 @@ function OptionSidebar() {
       .then((res) => {
         if (res.data.status === "success"){
           const matchID = res.data.info.matchID;
-          window.location.href = `http://localhost:5000/live/${matchID}`
+          window.location.href = `http://localhost:5000/chess/live/${matchID}`
         }
       })
       .catch((err) => {});
