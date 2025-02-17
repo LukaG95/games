@@ -1,0 +1,49 @@
+.main{
+  display: flex;
+  flex-direction: column;
+
+  background: #272522;
+  justify-content: space-between;
+
+  width: 400px;
+  min-height: 100%;
+  
+  border-radius: 3px;
+
+  margin-left: 20px;
+  padding: 15px;
+
+  overflow-y: auto;
+}
+
+.historyGrid{
+  display: grid;
+  color: #b1b1b1;
+
+  width: fit-content;
+
+  grid-template-columns: 20px 100px auto;
+  row-gap: 8px;
+  column-gap: 4px;
+}
+
+.historyWhite, .historyBlack{
+  display: flex;
+  width: 100px;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.historyWhite{
+  color: #272522;
+  background: #7c7c7c;
+}
+
+.historyBlack{
+  font-weight: bold;
+  background: #181818;
+}
